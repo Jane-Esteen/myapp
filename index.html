@@ -1,0 +1,39 @@
+<html>
+  <style>
+    body {
+        background: white }
+    section {
+        background: black;
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+  </style>
+  <section>
+    <h1></h1>
+    <p><script>
+     var myDate = new Date();
+    var year = myDate.getFullYear();   
+        if (year%4==0&&year%100!=0)
+		{ 
+			var info1=year+"年是闰年";
+            document.write(info1)  
+        }
+		else if (year%400==0)
+		{  
+			var info2=year+"年闰年";
+            document.write(info2)  
+        }  
+        else
+		{  
+            var info3=year+"年不是闰年";
+            document.write(info3)  
+        } 
+
+</script>
+    <p>
+  </section>
